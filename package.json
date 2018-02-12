@@ -1,10 +1,10 @@
 {
   "name": "brain-games-igakim",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Popular game",
   "main": "index.js",
   "bin": {
-  "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
     "dist"
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/igakim/project-lvl1-s224/issues"
   },
-  "homepage": "https://github.com/igakim/project-lvl1-s224#readme"
+  "homepage": "https://github.com/igakim/project-lvl1-s224#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.8"
+  }
 }
