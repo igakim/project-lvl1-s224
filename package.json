@@ -1,6 +1,6 @@
 {
   "name": "brain-games-igakim",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Popular game",
   "main": "index.js",
   "bin": {

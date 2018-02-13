@@ -8,23 +8,15 @@ const greet = () => {
 
 const generateNumber = (min, max) => Math.floor((Math.random() * (max - min)) + min);
 
-const game = (countAnswers, userName) => {
-  if (countAnswers === 3) {
-    return console.log(`Congratulation, ${userName}!`);
+const operation = (sign, a, b) => {
+  if (sign === '+') {
+    return a + b;
+  } else if (sign === '-') {
+    return a - b;
+  } else if (sign === '*') {
+    return a * b;
   }
-
-  const num = generateNumber(1, 100);
-  const rightAnswer = num % 2 === 0 ? 'yes' : 'no';
-  const answer = readlineSync.question(`Question: ${num} `);
-
-  if (answer === rightAnswer) {
-    console.log(`Your answer: ${answer}`);
-    console.log('Correct!');
-    return game(countAnswers + 1, userName);
-  }
-
-  console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}`);
-  return console.log(`Let's try again, ${userName}!`);
+  return 0;
 };
 
-export { greet, game };
+export { greet, generateNumber, operation };
