@@ -1,7 +1,7 @@
 import { gN, run } from '..';
 
 const game = () => {
-  const message = 'Answer "yes" if number even otherwise answer "no".\n';
+  const message = 'Answer "yes" if number even otherwise answer "no".';
   const getQA = () => {
     const num = gN(0, 100);
     const question = `${num}`;

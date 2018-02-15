@@ -1,7 +1,7 @@
 import { gN, run } from '..';
 
 const game = () => {
-  const message = 'What is the result of the expression? \n';
+  const message = 'What is the result of the expression?';
   const getQA = () => {
     const num1 = gN(0, 25);
     const num2 = gN(0, 25);

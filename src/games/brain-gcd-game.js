@@ -1,7 +1,7 @@
 import { gN, gcd, run } from '..';
 
 const game = () => {
-  const message = 'Find the greatest common divisor of given numbers. \n';
+  const message = 'Find the greatest common divisor of given numbers.';
   const getQA = () => {
     const num1 = gN(1, 50);
     const num2 = gN(1, 50);
