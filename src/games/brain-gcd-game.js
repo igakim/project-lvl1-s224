@@ -1,4 +1,6 @@
-import { gN, gcd, run } from '..';
+import run from '..';
+import { gcd } from './../gameFunctions/gameFunctions';
+import gN from './../gameFunctions/randomNumber';
 
 const game = () => {
   const message = 'Find the greatest common divisor of given numbers.';

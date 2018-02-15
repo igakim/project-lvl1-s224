@@ -1,4 +1,6 @@
-import { gN, run } from '..';
+import run from '..';
+import { calc } from './../gameFunctions/gameFunctions';
+import gN from './../gameFunctions/randomNumber';
 
 const game = () => {
   const message = 'What is the result of the expression?';
@@ -8,12 +10,7 @@ const game = () => {
     const operators = ['+', '-', '*'];
     const currentOperator = operators[gN(0, 3)];
     const question = `${num1} ${currentOperator} ${num2}`;
-    if (currentOperator === '+') {
-      return [num1 + num2, question];
-    } else if (currentOperator === '-') {
-      return [num1 - num2, question];
-    }
-    return [num1 * num2, question];
+    return [calc(currentOperator, num1, num2), question];
   };
 
   return run(message, getQA);

@@ -1,4 +1,6 @@
-import { gN, balanceNumber, run } from '..';
+import run from '..';
+import { balanceNumber } from './../gameFunctions/gameFunctions';
+import gN from './../gameFunctions/randomNumber';
 
 const game = () => {
   const message = 'Balance the given number.';
