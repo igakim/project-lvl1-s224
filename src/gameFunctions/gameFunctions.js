@@ -1,3 +1,12 @@
+const getProgression = (startNum, diff) => {
+  const iter = (num, acc) => {
+    if (acc.length >= 10) return acc;
+    acc.push(num + diff);
+    return iter(num + diff, acc);
+  };
+  return iter(startNum, [startNum]);
+};
+
 const balanceNumber = (num) => {
   const numsArray = String(num).split('').map(v => v * 1);
   const l = numsArray.length;
@@ -27,4 +36,4 @@ const calc = (currentOperator, num1, num2) => {
   return num1 * num2;
 };
 
-export { balanceNumber, gcd, calc };
+export { balanceNumber, gcd, calc, getProgression };
