@@ -1,3 +1,12 @@
+const isPrime = (n) => {
+  const iter = (num, div) => {
+    if (div === num) return true;
+    if (num % div === 0) return false;
+    return iter(num, div + 1);
+  };
+  return iter(n, 2);
+};
+
 const getProgression = (startNum, diff) => {
   const iter = (num, acc) => {
     if (acc.length >= 10) return acc;
@@ -36,4 +45,4 @@ const calc = (currentOperator, num1, num2) => {
   return num1 * num2;
 };
 
-export { balanceNumber, gcd, calc, getProgression };
+export { balanceNumber, gcd, calc, getProgression, isPrime };
