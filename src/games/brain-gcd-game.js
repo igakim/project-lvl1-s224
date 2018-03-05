@@ -1,4 +1,4 @@
-import run from '..';
+import { run } from '..';
 import { gcd } from './../gameFunctions/gameFunctions';
 import gN from './../gameFunctions/randomNumber';
 

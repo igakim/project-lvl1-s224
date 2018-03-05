@@ -1,4 +1,5 @@
-import { gN, run } from '..';
+import { run } from '..';
+import gN from './../gameFunctions/randomNumber';
 
 const game = () => {
   const message = 'Answer "yes" if number even otherwise answer "no".';

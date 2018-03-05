@@ -18,9 +18,11 @@ const startGame = (countAnswers, userName, correctAnswer) => {
   return console.log(`${answer} is wrong answer ;(. Correct answer is ${correct}`);
 };
 
-export default (message, correctAnswer) => {
+const run = (message, correctAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${message}\n`);
   const userName = greet();
   return startGame(0, userName, correctAnswer);
 };
+
+export { greet, run };
