@@ -1,7 +1,6 @@
 # Brain Games
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9e6dd9b6265213ff0122/maintainability)](https://codeclimate.com/github/igakim/project-lvl1-s224/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 [![Build Status](https://travis-ci.org/igakim/project-lvl1-s224.svg?branch=master)](https://travis-ci.org/igakim/project-lvl1-s224)
 
@@ -11,4 +10,3 @@
 Установка из npm:
 
     npm i brain-games-igakim
-
